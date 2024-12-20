@@ -1,0 +1,270 @@
+.menu__icon {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 18px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu__icon span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+  }
+
+  .menu__icon span:first-child {
+    top: 0;
+  }
+
+  .menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+
+  .active > span {
+    transform: scale(0);
+  }
+
+  .active > span:first-child {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+
+  .active > span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+
+  .menu__body {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: orangered;
+    transition: all 0.2s ease;
+    overflow: auto;
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .menu__list {
+    padding: 30px;
+    flex-direction: column;
+    gap: 0;
+    margin: auto;
+  }
+
+  .menu__link {
+    display: block;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+/* Menu з лева  */
+@media (max-width:768px) {
+  .menu__icon span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .2s ease;
+  }
+
+  .menu__icon span:first-child {
+    top: 0;
+  }
+
+  .menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+
+  .active>span {
+    transform: scale(0);
+  }
+
+  .active>span:first-child {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+
+  .active>span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+
+  .menu__body {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    transition: all .2s ease;
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .menu__list {
+    padding: 30px;
+    flex-direction: column;
+    gap: 0;
+    width: 60%;
+    height: 100%;
+    background-color: orangered;
+    overflow: auto;
+  }
+
+  .menu__link {
+    display: block;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+/* Menu з right */
+@media (max-width:768px) {
+  .menu__icon span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .2s ease;
+  }
+
+  .menu__icon span:first-child {
+    top: 0;
+  }
+
+  .menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+
+  .active>span {
+    transform: scale(0);
+  }
+
+  .active>span:first-child {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+
+  .active>span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+
+  .menu__body {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: orangered;
+    transition: all .2s ease;
+    overflow: auto;
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .menu__list {
+    padding: 30px;
+    flex-direction: column;
+    gap: 0;
+    margin: auto;
+  }
+
+  .menu__link {
+    display: block;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+/* Menu З ВЕРХУ  */
+@media (max-width:768px) {
+  .menu__icon span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .2s ease;
+  }
+
+  .menu__icon span:first-child {
+    top: 0;
+  }
+
+  .menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+
+  .active>span {
+    transform: scale(0);
+  }
+
+  .active>span:first-child {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+
+  .active>span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+
+  .menu__body {
+    display: flex;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: orangered;
+    transition: all .2s ease;
+    overflow: auto;
+  }
+
+  .active {
+    transform: translateY(100%);
+  }
+
+  .menu__list {
+    padding: 30px;
+    flex-direction: column;
+    gap: 0;
+    margin: auto;
+  }
+
+  .menu__link {
+    display: block;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+/* Byrger  */
